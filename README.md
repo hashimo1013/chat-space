@@ -45,16 +45,16 @@ Things you may want to cover:
 ### Association
 - belongs_to :user
 - belongs_to :group
-## groups_usersテーブル
+## groupsテーブル
 
 |Column|Type|Options|
 |------|----|-------|
+|name|string|null: false|
 |user_id|integer|null: false, foreign_key: true|
-|group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :group
-- belongs_to :user
+- has_many :messages
+- has_many :users, through :groups_users
 ## groups_usersテーブル
 
 |Column|Type|Options|
