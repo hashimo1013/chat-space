@@ -53,7 +53,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false|
-|user_id|integer|null: false, foreign_key: true|
+|user|references|null: false, foreign_key: true|
 
 ### Association
 - has_many :messages
