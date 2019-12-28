@@ -11,6 +11,13 @@
     float: left;
       &__user {
         height: 100px;
+        display: flex;
+        align-items: center;
+        &--name {
+          margin-left: 20px;
+          font-size: 16px;
+        }
+
       }
       &__chat_group {
         height: calc(100vh - 100px);
