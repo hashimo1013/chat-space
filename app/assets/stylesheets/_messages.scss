@@ -2,11 +2,18 @@
   box-sizing: border-box;
 }
 
-.side_bar {
-  background-color: #253141;
-}
+.wrapper {
+  .side_bar {
+    width: 300px;
+    background-color: #253141;
+    height: 100vh;
+    float: left;
+  }
 
-.main_chat {
-  width: clc(100vw - 300px);
-  background-color: #ffffff;
+  .main_chat {
+    width: calc(100vw - 300px);
+    background-color: #ffffff;
+    height: 100vh;
+    float: left;
+  }
 }
