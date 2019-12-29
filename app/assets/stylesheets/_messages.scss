@@ -86,10 +86,35 @@
       text-align: center;
     }
   }
-  .log {
-    height: calc(100vh - 100px - 90px);
-    background-color: #fafafa;
+.log {
+  height: calc(100vh - 100px - 90px);
+  background-color: #fafafa;
+  &__info {
+
+    padding: 35px 0 11px 40px;
   }
+}
+
+.log__info__user {
+  // display: flex;
+  // justify-content: flex-start;
+  &__name {
+    color: #333333;
+    font-size: 16px;
+  }
+  &__time {
+    color: #999999;
+    font-size: 12px;
+    vertical-align:top;
+  }
+}
+.log__info__message {
+  margin-top: 12px;
+  color: #434a54;
+  font-size: 14px;
+}
+
+
   .message {
     height: 90px;
     background-color: #d2d2d2;
