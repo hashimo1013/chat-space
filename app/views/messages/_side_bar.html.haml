@@ -2,5 +2,10 @@
   .side_bar__user
     %p.side_bar__user--name
       user
+    %p.side_bar__user--btn
+      =link_to "#", class: "side_bar__user--btn--edit" do
+        = icon('fas', 'edit')
+      =link_to "#", class: "side_bar__user--btn--gear" do
+        = icon('fas', 'cog')
   .side_bar__chat_group
     group
