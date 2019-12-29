@@ -1,11 +1,14 @@
 .side_bar
   .side_bar__user
-    %p.side_bar__user--name
-      user
-    %p.side_bar__user--btn
-      =link_to "#", class: "side_bar__user--btn--edit" do
-        = icon('fas', 'edit')
-      =link_to "#", class: "side_bar__user--btn--gear" do
-        = icon('fas', 'cog')
-  .side_bar__chat_group
-    group
+    .side_bar__user__info
+      %p.side_bar__user__info--name
+        user
+      %p.side_bar__user__info--btn
+        =link_to "#", class: "side_bar__user__info--btn--gear" do
+          = icon('fas', 'cog')
+        =link_to "#", class: "side_bar__user__info--btn--edit" do
+          = icon('fas', 'edit')
+        
+  .side_bar__chat_groups
+    %h1.side_bar__chat_groups
+    %p.side_bar__chat_groups__message

@@ -1,55 +1,64 @@
 * {
   box-sizing: border-box;
 }
-
-.wrapper {
-  .side_bar {
+.side_bar {
     width: 300px;
     background-color: #253141;
     color: #ffffff;
     height: 100vh;
     float: left;
-      &__user {
-        height: 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        &--name {
-          margin-left: 20px;
-          font-size: 16px;
-        }
-        &--btn {
-          margin-right: 20px;
-          &--edit {
-            color: #ffffff;
-          }
-          &--gear {
-            color: #ffffff;
-          }
-        }
+    &__user {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+    }
+}
+.side_bar__user__info{
+  line-height: 20px;
+  width: calc(300px - 20px - 20px);
+  display: flex;
+  justify-content: space-between;
+  &--name {
+    font-size: 16px;
+  }
+  &--btn {
+    width: 60px;
+    &--gear {
+      color: #ffffff;
+      text-decoration: none;
+      float: right;
+    }
+    &--edit {
+      color: #ffffff;
+      text-decoration: none;
+      float: right;
+      margin-right: 5px;
+    }
+    
+  }
 
-      }
-      &__chat_group {
+}
+.side_bar__chat_groups {
         height: calc(100vh - 100px);
         background-color: #2f3e51;
       }
-  }
+  
 
-  .main_chat {
-    width: calc(100vw - 300px);
-    background-color: #ffffff;
-    height: 100vh;
-    float: left;
-    .group_name {
-      height: 100px;
-    }
-    .log {
-      height: calc(100vh - 100px - 90px);
-      background-color: #fafafa;
-    }
-    .message {
-      height: 90px;
-      background-color: #d2d2d2;
-    }
+.main_chat {
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  height: 100vh;
+  float: left;
+  .group_name {
+    height: 100px;
+  }
+  .log {
+    height: calc(100vh - 100px - 90px);
+    background-color: #fafafa;
+  }
+  .message {
+    height: 90px;
+    background-color: #d2d2d2;
   }
 }
