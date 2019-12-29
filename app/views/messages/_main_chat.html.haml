@@ -1,7 +1,14 @@
 .main_chat
-  .group_name
-    groupname
-  .log
+  .current_group
+    .current_group__left
+      .current_group__left__name
+        name
+      .current_group__left__member
+        member
+    =link_to "#",class:"current_group__btn" do
+      Edit
+    
+  .log  
     log
   .message
     message
