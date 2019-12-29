@@ -35,15 +35,29 @@
       float: right;
       margin-right: 5px;
     }
-    
   }
-
 }
-.side_bar__chat_groups {
-        height: calc(100vh - 100px);
-        background-color: #2f3e51;
-      }
-  
+
+.side_bar__chat_index {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  &__group {
+    &__name {
+      font-size: 15px;
+      padding: 20px 20px 5px;
+    }
+    &__message {
+      font-size: 11px;
+      padding: 0 20px 40px;
+
+    }
+  }
+}
+
+
+
+
+
 
 .main_chat {
   width: calc(100vw - 300px);
