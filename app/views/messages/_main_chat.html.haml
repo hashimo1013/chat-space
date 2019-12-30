@@ -19,4 +19,11 @@
         はろー
 
   .message
-    message
+    .message__form
+      .message__form__text
+        messe-ge
+      %label.message__form__icon
+        <i class="far fa-image fa-lg"></i>
+        %input.message__form__icon__input{:type => "file"}
+    =link_to "#",class:"message__btn" do
+      Send
