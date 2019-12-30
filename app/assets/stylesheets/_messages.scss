@@ -4,10 +4,10 @@
 .side_bar {
     width: 300px;
     background-color: #253141;
-    color: #ffffff;
+    color: $White;
     height: 100vh;
     float: left;
-    &__user {
+    .user {
       height: 100px;
       display: flex;
       align-items: center;
@@ -15,7 +15,7 @@
     }
 }
 
-.side_bar__user__info{
+.user__info{
   line-height: 20px;
   width: calc(300px - 20px - 20px);
   display: flex;
@@ -26,12 +26,12 @@
   &--btn {
     width: 60px;
     &--gear {
-      color: #ffffff;
+      color: $White;
       text-decoration: none;
       float: right;
     }
     &--edit {
-      color: #ffffff;
+      color: $White;
       text-decoration: none;
       float: right;
       margin-right: 5px;
@@ -39,7 +39,7 @@
   }
 }
 
-.side_bar__chat_index {
+.index {
   height: calc(100vh - 100px);
   background-color: #2f3e51;
   &__group {
@@ -56,7 +56,7 @@
 
 .main_chat {
   width: calc(100vw - 300px);
-  background-color: #ffffff;
+  background-color: $White;
   height: 100vh;
   float: right;
 }
@@ -69,19 +69,16 @@
   &__left {
     margin-left: 40px;
     &__name {
-      color: #333333;
-      font-size: 20px;
+      @include fsize-color(20px,#333333);
       margin-top: 35px;
     }
     &__member {
-      color: #999999;
-      font-size: 12px;
+      @include fsize-color(12px,#999999);
       margin-top: 15px;
     }
   }
   &__btn {
-    color: #38aef0;
-    font-size: 16px;
+    @include fsize-color(16px,#38aef0);
     width: 70px;
     line-height: 38px;
     border: 1px solid;
@@ -95,29 +92,23 @@
   height: calc(100vh - 100px - 90px);
   background-color: #fafafa;
   &__info {
-
     padding: 35px 0 11px 40px;
   }
 }
 
 .log__info__user {
-  // display: flex;
-  // justify-content: flex-start;
   &__name {
-    color: #333333;
-    font-size: 16px;
+    @include fsize-color(16px,#333333);
   }
   &__time {
-    color: #999999;
-    font-size: 12px;
+    @include fsize-color(12px,#999999);
     vertical-align:top;
   }
 }
 
 .log__info__message {
+  @include fsize-color(14px,#434a54);
   margin-top: 12px;
-  color: #434a54;
-  font-size: 14px;
 }
 
 .message {
@@ -130,7 +121,7 @@
     width: calc(100% - 40px - 15px - 90px - 40px);
     line-height: 50px;
     margin: 0 15px 0 40px;
-    background-color: #fafafa;
+    background-color: $White;
     display: flex;
     justify-content: space-between;
     position: relative;
@@ -150,7 +141,7 @@
     width: 90px;
     margin-right: 40px;
     background-color: #38aef0;
-    color: #fafafa;
+    color: $White;
     line-height: 50px;
     text-align: center;
     text-decoration: none;

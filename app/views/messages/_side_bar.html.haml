@@ -1,18 +1,18 @@
 .side_bar
-  .side_bar__user
-    .side_bar__user__info
-      %p.side_bar__user__info--name
+  .user
+    .user__info
+      %p.user__info__name
         user
-      %p.side_bar__user__info--btn
-        =link_to "#", class: "side_bar__user__info--btn--gear" do
+      %p.user__info__btn
+        =link_to "#", class: "user__info--btn--gear" do
           = icon('fas', 'cog')
-        =link_to "#", class: "side_bar__user__info--btn--edit" do
+        =link_to "#", class: "user__info--btn--edit" do
           = icon('fas', 'edit')
         
-  .side_bar__chat_index
-    .side_bar__chat_index__group
-      %h1.side_bar__chat_index__group__name
+  .index
+    .index__group
+      %h1.index__group__name
         グループ名
-      %p.side_bar__chat_index__group__message
+      %p.index__group__message
         メッセージ
     
