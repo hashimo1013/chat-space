@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+.side_bar {
+    width: 300px;
+    background-color: #253141;
+    color: $White;
+    height: 100vh;
+    float: left;
+    .user {
+      height: 100px;
+      display: flex;
+      align-items: center;
+      margin: 0 20px;
+    }
+}
+
+.user__info{
+  line-height: 20px;
+  width: calc(300px - 20px - 20px);
+  display: flex;
+  justify-content: space-between;
+  &--name {
+    font-size: 16px;
+  }
+  &--btn {
+    width: 60px;
+    &--gear {
+      color: $White;
+      text-decoration: none;
+      float: right;
+    }
+    &--edit {
+      color: $White;
+      text-decoration: none;
+      float: right;
+      margin-right: 5px;
+    }
+  }
+}
+
+.index {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  &__group {
+    &__name {
+      font-size: 15px;
+      padding: 20px 20px 5px;
+    }
+    &__message {
+      font-size: 11px;
+      padding: 0 20px 40px;
+    }
+  }
+}
+
+.main_chat {
+  width: calc(100vw - 300px);
+  background-color: $White;
+  height: 100vh;
+  float: right;
+}
+
+.current_group {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  &__left {
+    margin-left: 40px;
+    &__name {
+      @include fsize-color(20px,#333333);
+      margin-top: 35px;
+    }
+    &__member {
+      @include fsize-color(12px,#999999);
+      margin-top: 15px;
+    }
+  }
+  &__btn {
+    @include fsize-color(16px,#38aef0);
+    width: 70px;
+    line-height: 38px;
+    border: 1px solid;
+    margin: 28px 40px 32px 0;
+    text-decoration: none;
+    text-align: center;
+  }
+}
+
+.log {
+  height: calc(100vh - 100px - 90px);
+  background-color: #fafafa;
+  &__info {
+    padding: 35px 0 11px 40px;
+  }
+}
+
+.log__info__user {
+  &__name {
+    @include fsize-color(16px,#333333);
+  }
+  &__time {
+    @include fsize-color(12px,#999999);
+    vertical-align:top;
+  }
+}
+
+.log__info__message {
+  @include fsize-color(14px,#434a54);
+  margin-top: 12px;
+}
+
+.message {
+  width: calc(100vw - 300px);
+  height: 90px;
+  background-color: #d2d2d2;
+  display: flex;
+  align-items: center;
+  &__form {
+    width: calc(100% - 40px - 15px - 90px - 40px);
+    line-height: 50px;
+    margin: 0 15px 0 40px;
+    background-color: $White;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    &__text {
+      margin-left: 10px; 
+      color: #999999;
+    }
+    &__icon {
+      position: absolute;
+      right: 10px;
+      &__input {
+        display: none;
+      }
+    }
+  }
+  &__btn {
+    width: 90px;
+    margin-right: 40px;
+    background-color: #38aef0;
+    color: $White;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+

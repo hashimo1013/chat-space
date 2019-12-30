@@ -1,0 +1,18 @@
+.side_bar
+  .user
+    .user__info
+      %p.user__info__name
+        user
+      %p.user__info__btn
+        =link_to "#", class: "user__info--btn--gear" do
+          = icon('fas', 'cog')
+        =link_to "#", class: "user__info--btn--edit" do
+          = icon('fas', 'edit')
+        
+  .index
+    .index__group
+      %h1.index__group__name
+        グループ名
+      %p.index__group__message
+        メッセージ
+    

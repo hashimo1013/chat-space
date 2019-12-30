@@ -1,0 +1,29 @@
+.main_chat
+  .current_group
+    .current_group__left
+      .current_group__left__name
+        GroupName
+      .current_group__left__member
+        member
+    =link_to "#",class:"current_group__btn" do
+      Edit
+    
+  .log  
+    .log__info
+      .log__info__user
+        %span.log__info__user__name
+          Name
+        %span.log__info__user__time
+          12/29
+      .log__info__message
+        はろー
+
+  .message
+    .message__form
+      .message__form__text
+        type a message
+      %label.message__form__icon
+        <i class="far fa-image fa-lg"></i>
+        %input.message__form__icon__input{:type => "file"}
+    =link_to "#",class:"message__btn" do
+      Send
