@@ -2,13 +2,13 @@
   .user
     .user__info
       %p.user__info__name
-        user
+        = current_user.name
       %ul.user__info__btn
         %li.user__info__btn--gear
           =link_to "#", class: 'user__info__btn--gear--link' do
             = icon('fas', 'cog')
         %li.user__info__btn--edit
-          =link_to "#", class: 'user__info__btn--edit--link' do
+          =link_to edit_user_path(current_user), class: 'user__info__btn--edit--link' do
             = icon('fas', 'edit')
         
   .index
