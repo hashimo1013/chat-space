@@ -19,6 +19,13 @@
     &__member {
       @include fsize-color(12px,#999999);
       margin-top: 15px;
+      // @include flexbox;
+      //   color: $light_gray;
+      //   font-size: 12px;
+      //   margin-top: 15px;
+      //   .member {
+      //     display: inline-block;
+      //     padding-right: 5px;
     }
   }
   &__btn {
@@ -33,7 +40,7 @@
 }
 
 .log {
-  height: calc(100vh - 100px - 90px);
+  height: calc(100% - 100px - 90px);
   background-color: #fafafa;
   &__info {
     padding: 35px 0 11px 40px;
@@ -56,7 +63,6 @@
 }
 
 .message {
-  width: calc(100vw - 300px);
   height: 90px;
   background-color: #d2d2d2;
   display: flex;
