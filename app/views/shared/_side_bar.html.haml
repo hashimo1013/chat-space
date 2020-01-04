@@ -1,0 +1,21 @@
+.side_bar
+  .user
+    .user__info
+      %p.user__info__name
+        = current_user.name
+      %ul.user__info__btn
+        %li.user__info__btn--gear
+          =link_to edit_user_path(current_user), class: 'user__info__btn--gear--link' do
+            = icon('fas', 'cog')
+        %li.user__info__btn--edit
+          =link_to new_group_path, class: 'user__info__btn--edit--link' do
+            = icon('fas', 'edit')
+        
+  .index
+    - current_user.groups.each do |group|
+      =link_to "/groups/1/edit",class: 'index__group' do
+        %h1.index__group__name
+          = group.name
+        %p.index__group__message
+          メッセージ
+    
