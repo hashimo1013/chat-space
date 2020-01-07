@@ -1,0 +1,22 @@
+.main_chat
+  .current_group
+    .current_group__left
+      .current_group__left__name
+        = @group.name
+      .current_group__left__member
+        - @group.users.each do |user|
+          = user.name
+    =link_to edit_group_path(@group),class:"current_group__btn" do
+      Edit
+    
+  .log  
+    = render @messages
+
+  
+  = form_for [@group, @message], html: { class: "form"} do |f|
+    .form__box
+      = f.text_field :text, class: "form__box__text", placeholder: "type a message"
+      = f.label :image, class: "form__box__label" do
+        = icon('far', 'image',class: "form__box__label__icon")
+        = f.file_field :image, class: "form__box__label__input" 
+    = f.submit 'Send', class: "form__btn"   
