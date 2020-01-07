@@ -12,7 +12,7 @@ class GroupsController < ApplicationController
   def create
     @group = Group.new(group_params)
     if @group.save
-      redirect_to root_path, notice: 'グループ作成したよー'
+      redirect_to group_messages_path(@group), notice: 'グループ作成したよー'
     else
       render :new
     end
@@ -23,7 +23,7 @@ class GroupsController < ApplicationController
 
   def update
     if @group.update(group_params)
-      redirect_to root_path, notice: 'グループ編集しますた'
+      redirect_to group_messages_path(@group), notice: 'グループ編集しますた'
     else
       render :edit
     end

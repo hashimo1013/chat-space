@@ -1,0 +1,9 @@
+.log__info
+  .log__info__user
+    %span.log__info__user__name
+      = message.user.name
+    %span.log__info__user__time
+      = message.created_at
+  .log__info__message
+    = message.text
+    -# = image_tag message.image.url
