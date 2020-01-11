@@ -42,6 +42,7 @@
 .log {
   height: calc(100% - 100px - 90px);
   background-color: #fafafa;
+  overflow: scroll;
   &__info {
     padding: 35px 0 11px 40px;
   }
