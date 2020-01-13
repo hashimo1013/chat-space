@@ -9,8 +9,7 @@ before_action :set_group
   def create
     @message = @group.messages.new(message_params)
     if @message.save
-      respond_to do |format|
-        # format.html {redirect_to group_messages_path(@group), notice: 'メッセージとーこー'}
+       respond_to do |format|
         format.json
       end
     else

@@ -7,4 +7,4 @@
   .log__info__message
     - if message.text.present?
       = message.text
-    = image_tag message.image_url if message.image.present?
+    = image_tag message.image_url if message.image_url present?
