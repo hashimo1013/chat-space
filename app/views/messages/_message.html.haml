@@ -1,4 +1,4 @@
-.log__info
+.log__info{data: {message: {id: "#{message.id}"}}}
   .log__info__user
     %span.log__info__user__name
       = message.user.name
@@ -7,4 +7,4 @@
   .log__info__message
     - if message.text.present?
       = message.text
-    = image_tag message.image_url if message.image.present?
+    = image_tag message.image_url if message.image_url present?

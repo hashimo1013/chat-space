@@ -55,8 +55,8 @@ $(function() {
 
 
   $(document).on('click', ".user-search-add", function(){
-    var userName = $(".user-search-add").attr("data-user-name");
-    var userId = $(".user-search-add").attr("data-user-id");
+    var userName = $(this).attr("data-user-name");
+    var userId = $(this).attr("data-user-id");
     $(this).parent().remove();
     addDeleteUser(userName, userId);
     addMember(userId);
