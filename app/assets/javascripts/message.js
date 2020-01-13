@@ -17,7 +17,6 @@ $(function(){
                     <div> `
                   
     } else{
-      console.log(message)
       var html =`   <div class=log__info data-message-id=${message.id}>
                       <div class=log__info__user>
                         <span class=log__info__user__name>
@@ -79,7 +78,7 @@ $(function(){
       }
     })
     .fail(function() {
-      console.log('しっぱい');
+      alert("自動更新しっぱい");
     });
   };
   if (document.location.href.match(/\/groups\/\d+\/messages/)) {
