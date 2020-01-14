@@ -11,7 +11,7 @@ $(function(){
                       </span>
                       </div>
                       <div class="log__info__message">
-                      ${message.text}
+                      ${message.text}</br>
                       <image src =${message.image_url}>
                       </div>
                     <div> `
