@@ -14,7 +14,7 @@
   .index
     - current_user.groups.each do |group|
       =link_to group_messages_path(group),class: 'index__group' do
-        %h1.index__group__name
+        .index__group__name
           = group.name
         %p.index__group__message
           = group.show_last_message    
