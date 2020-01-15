@@ -1,5 +1,5 @@
 .main_chat {
-  width: calc(100vw - 300px);
+  width: calc(100% - 300px);
   background-color: $White;
   height: 100vh;
   float: right;
@@ -99,4 +99,5 @@
     text-decoration: none;
   }
 }
+
 
